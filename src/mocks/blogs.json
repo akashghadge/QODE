@@ -3,21 +3,70 @@
         "id": "b1",
         "title": "CM Fixed Income: Exiting Banking & PSU to Add a New Gilt Fund",
         "date": "2024-04-18",
-        "excerpt": "We are increasing the duration of our Fixed Income portfolio to reflect the current macro conditions...",
+        "excerpt": "We are increasing the duration of our Fixed Income portfolio to reflect the current macro conditions. This change helps us align with the evolving yield curve dynamics and maintain stability in the portfolio.",
         "url": "#"
     },
     {
         "id": "b2",
         "title": "Craftsman Automation: Poised for Growth Amid Temporary Headwinds",
         "date": "2024-04-05",
-        "excerpt": "Unlock this post by trail. Craftsman Automation excels in making precise parts for cars and machines...",
+        "excerpt": "Craftsman Automation has delivered strong operational performance despite short-term challenges. The company remains well-positioned due to its diversified order book and increasing traction in export markets.",
         "url": "#"
     },
     {
         "id": "b3",
         "title": "The Focused Way of Investing: Our Four-Quadrant Strategy and FY24 Review",
         "date": "2024-04-03",
-        "excerpt": "FY24 brought us a 42% gain in our Capitalmind Focused portfolio, gently outperforming the Nifty's 29%...",
+        "excerpt": "Our four-quadrant strategy continues to show resilience in volatile markets. FY24 was a year of disciplined execution, strong stock selection, and adherence to risk-adjusted frameworks.",
+        "url": "#"
+    },
+    {
+        "id": "b4",
+        "title": "Smallcase Portfolio Update: Aligning with Market Breadth Recovery",
+        "date": "2024-03-27",
+        "excerpt": "With market breadth improving, we have increased exposure to mid-cap and thematic allocations. The model has been rebalanced to include sectors showing meaningful earnings acceleration.",
+        "url": "#"
+    },
+    {
+        "id": "b5",
+        "title": "US Inflation Cools Further — What It Means for Emerging Markets",
+        "date": "2024-03-20",
+        "excerpt": "The latest US CPI data shows continued moderation in inflation, reducing pressure on global liquidity. Emerging markets, including India, are likely to benefit from a more stable rate outlook.",
+        "url": "#"
+    },
+    {
+        "id": "b6",
+        "title": "How We Use Factor Investing to Build Stable Returns",
+        "date": "2024-03-15",
+        "excerpt": "Factor investing has been a critical part of our strategy. By combining momentum, quality, and low-volatility factors, we create consistent return streams while managing downside risks.",
+        "url": "#"
+    },
+    {
+        "id": "b7",
+        "title": "Budget 2024: Sector Winners and Allocation Shifts",
+        "date": "2024-02-29",
+        "excerpt": "Budget 2024 brought clarity on capital expenditure, manufacturing incentives, and lower fiscal deficit targets. We adjusted our portfolio stance across industrials, financials, and power sectors accordingly.",
+        "url": "#"
+    },
+    {
+        "id": "b8",
+        "title": "Why We Reduced Exposure to High-Beta Stocks",
+        "date": "2024-02-12",
+        "excerpt": "High-beta stocks saw significant run-up over the last few quarters. With global uncertainty rising, we trimmed exposure to protect the portfolio from sharp drawdowns, focusing instead on stable compounders.",
+        "url": "#"
+    },
+    {
+        "id": "b9",
+        "title": "Deep Dive: Understanding Earnings Revision Cycles",
+        "date": "2024-01-29",
+        "excerpt": "Earnings revision cycles play a crucial role in identifying early market trends. In this post, we explore how analyst upgrades and downgrades signal momentum shifts across sectors and how we incorporate them into our models for better timing and allocation decisions.",
+        "url": "#"
+    },
+    {
+        "id": "b10",
+        "title": "How Macroeconomic Indicators Shape Long-Term Equity Returns",
+        "date": "2024-01-10",
+        "excerpt": "Long-term equity returns are influenced by GDP growth, inflation expectations, liquidity cycles, and global monetary policies. Understanding these macro factors helps in building robust asset-allocation strategies that stand resilient across multiple market regimes.",
         "url": "#"
     }
 ]

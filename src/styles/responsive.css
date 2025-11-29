@@ -1,0 +1,44 @@
+/* src/styles/responsive.css */
+
+@media (max-width: 1000px) {
+    .grid-3 {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        display: none;
+    }
+
+    /* hide sidebar on small screens (you can toggle it with JS) */
+    .portfolio-top {
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .trailing-table {
+        max-width: none;
+        width: 100%;
+    }
+
+    .chart-area {
+        height: 320px;
+    }
+}
+
+@media (max-width: 520px) {
+    .content {
+        padding: 16px;
+    }
+
+    .blog-title {
+        font-size: 15px;
+    }
+
+    .chart-area {
+        height: 260px;
+    }
+}

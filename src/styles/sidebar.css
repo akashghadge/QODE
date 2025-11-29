@@ -1,0 +1,181 @@
+/* src/styles/sidebar.css */
+
+/* Sidebar (part of flex layout by default) */
+.sidebar {
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
+    height: calc(100vh);
+    overflow: auto;
+    z-index: 20;
+    width: var(--sidebar-width);
+    min-width: var(--sidebar-min);
+    max-width: var(--sidebar-max);
+    background: var(--surface);
+    border-right: 1px solid var(--muted-2);
+    /* padding: 28px 20px; */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    box-sizing: border-box;
+    flex: 0 0 var(--sidebar-width);
+}
+
+
+/* If you want a pinned (fixed) sidebar, add this modifier class.
+   NOTE: when using fixed, content must be offset (see .content--with-fixed-sidebar). */
+.sidebar--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: var(--sidebar-width);
+    z-index: 1000;
+}
+
+/* Logo and nav */
+.logo {
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    margin-bottom: 6px;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.nav a {
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #0f172a;
+    font-size: 14px;
+    transition: background .15s, color .15s;
+}
+
+.nav a:hover {
+    background: var(--glass);
+}
+
+.nav a.active {
+    background: linear-gradient(90deg, rgba(15, 81, 50, 0.06), rgba(11, 99, 179, 0.02));
+    color: var(--accent);
+    font-weight: 700;
+}
+
+/* Optional: small footer text in sidebar */
+.sidebar .muted {
+    color: var(--muted);
+    font-size: 13px;
+    margin-top: auto;
+}
+
+/* Helper class: apply to content when sidebar is fixed */
+.content--with-fixed-sidebar {
+    margin-left: var(--sidebar-width);
+}
+
+
+
+/* logo image */
+.logo__img {
+    display: block;
+    height: 70px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* nav */
+.nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 0;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    color: #0f172a;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    background: var(--glass);
+    text-decoration: none;
+}
+
+.nav-link.active {
+    background: linear-gradient(90deg, rgba(15, 81, 50, 0.06), rgba(11, 99, 179, 0.02));
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.nav-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    color: rgba(10, 10, 10, 0.7);
+}
+
+.nav-text {
+    flex: 1;
+}
+
+/* profile block pinned bottom inside sidebar */
+.sidebar__profile {
+    margin-top: auto;
+    /* pushes this to the bottom */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-top: 1px solid rgba(0, 0, 0, 0.04);
+    background: transparent;
+    justify-content: space-between;
+}
+
+/* avatar */
+.profile__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 999px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+}
+
+/* small profile meta */
+.profile__meta {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.profile__name {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.profile__meta-sm {
+    font-size: 12px;
+    color: var(--muted);
+}

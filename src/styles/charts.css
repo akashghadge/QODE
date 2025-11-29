@@ -1,0 +1,20 @@
+/* src/styles/charts.css */
+
+.chart-card {
+    background: var(--surface);
+    border-radius: 8px;
+    padding: 14px;
+    box-shadow: var(--card-shadow);
+    width: 100%;
+}
+
+.chart-area {
+    height: 420px;
+    min-height: 300px;
+}
+
+/* Drawdown container */
+.drawdown {
+    height: 140px;
+    margin-top: 12px;
+}
