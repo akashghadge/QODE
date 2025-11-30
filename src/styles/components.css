@@ -162,3 +162,28 @@
     color: var(--muted);
     font-size: 12px;
 }
+
+
+
+/* export buttons & container tweaks */
+.btn {
+    background: var(--accent-2);
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+}
+
+.chart-export-container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+/* ensure charts render sharply in export - optional */
+.equity-chart-node svg,
+.drawdown-chart-node svg {
+    shape-rendering: geometricPrecision;
+}

@@ -66,7 +66,7 @@ export default function TrailingReturnsTable({ trailing }) {
                     ))}
                 </tbody>
             </table>
-            <text className='trailingTableText'>Note: Returns above 1 year are annualized</text>
+            <span className='trailingTableText'>Note: Returns above 1 year are annualized</span>
         </div>
     );
 }

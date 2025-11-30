@@ -2,9 +2,10 @@ import React, { useMemo, useState } from 'react';
 import { useData } from '../../context/DataContext';
 import TrailingReturnsTable from './TrailingReturnsTable';
 import MonthlyReturnsTable from './MonthlyReturnsTable';
-import EquityCurveChart from './EquityCurveChart';
-import DrawdownChart from './DrawdownChart';
+import ChartExporter from '../../components/ChartExporter';
+
 import { format } from 'date-fns';
+import { RestartAlt } from '@mui/icons-material';
 
 export default function Portfolio() {
     const { monthlyReturnsByYear, equitySeries, drawdownSeries, trailing, loading } = useData();
@@ -19,13 +20,19 @@ export default function Portfolio() {
             <div className="portfolio-top">
                 <TrailingReturnsTable trailing={trailing} />
 
+                {/* equeity curve */}
                 <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                        <div>
-                            <div style={{ fontWeight: 700, marginBottom: 8 }} className="trailing-table-heading">Equity Curve</div>
-                            <span className='kv'>
-                                Live since 2019-01-01
-                            </span>
+                        <div style={{ display: "flex", justifyContent: "center" }}>
+                            <div>
+                                <div style={{ fontWeight: 700, marginBottom: "8px" }} className="trailing-table-heading">Equity Curve</div>
+                                <span className='kv' style={{ fontSize: 11 }}>
+                                    Live since 2019-01-01
+                                </span>
+                            </div>
+                            <div style={{ fontSize: "10px", color: "green", cursor: "pointer", marginLeft: 12, display: 'flex', alignItems: 'end' }}>
+                                <RestartAlt fontSize='20px' color='green' style={{ marginBottom: "2px" }}></RestartAlt>Reset
+                            </div>
                         </div>
                         <div className="controls">
                             <label className="kv">
@@ -43,14 +50,8 @@ export default function Portfolio() {
                         </div>
                     </div>
 
-                    <div className="chart-card">
-                        <div className="chart-area">
-                            <EquityCurveChart equitySeries={equitySeries} />
-                        </div>
-                        <div style={{ marginTop: 12 }}>
-                            <DrawdownChart drawdownSeries={drawdownSeries} />
-                        </div>
-                    </div>
+                    {/* chart exporter */}
+                    <ChartExporter />
                 </div>
             </div>
 
@@ -59,6 +60,6 @@ export default function Portfolio() {
                 {loading && <p className="kv">Loading...</p>}
                 <MonthlyReturnsTable data={monthlyReturnsByYear} />
             </div> */}
-        </div>
+        </div >
     );
 }
