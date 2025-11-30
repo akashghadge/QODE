@@ -1,0 +1,14 @@
+.portfolio-top {
+    background: var(--surface);
+    border-radius: 8px;
+    box-shadow: var(--card-shadow);
+    padding: 1rem 2rem;
+}
+
+.portfolio-container>h1 {
+    margin-bottom: 1rem;
+}
+
+.trailing-table-heading {
+    font-size: 1.2rem;
+}

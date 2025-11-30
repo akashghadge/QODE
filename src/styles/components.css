@@ -27,13 +27,13 @@
 
 /* Trailing returns box */
 .trailing-table {
-    width: 340px;
+    /* width: 340px;
     max-width: 40%;
-    min-width: 260px;
-    background: var(--surface);
-    padding: 12px;
+    min-width: 260px; */
+    /* background: var(--surface); */
+    /* padding: 12px; */
     border-radius: 8px;
-    box-shadow: var(--card-shadow);
+    /* box-shadow: var(--card-shadow); */
     margin-bottom: 20px;
     font-size: 14px;
 }
@@ -118,4 +118,47 @@
 .loading {
     color: var(--muted);
     font-size: 14px;
+}
+
+
+
+/* table */
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    text-align: center;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 10px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 12px;
+}
+
+.comparison-table th {
+    font-weight: 400;
+    color: #0f172a;
+    text-align: left;
+    background-color: rgba(128, 128, 128, 0.075);
+    text-transform: uppercase;
+
+}
+
+.comparison-table td {
+    color: var(--muted);
+    text-align: left;
+}
+
+.name-cell {
+    text-align: left;
+    /* font-weight: 700; */
+    color: #0f172a;
+}
+
+.trailingTableText {
+    color: var(--muted);
+    font-size: 12px;
 }

@@ -14,18 +14,30 @@ export default function Portfolio() {
     // If user sets dates, we could filter equity/drawdown; for demo keep full series.
 
     return (
-        <div>
-            <h1 style={{ margin: 0 }}>Focused Portfolio</h1>
+        <div className='portfolio-container'>
+            <h1>Focused Portfolio</h1>
             <div className="portfolio-top">
                 <TrailingReturnsTable trailing={trailing} />
+
                 <div style={{ flex: 1 }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 8 }}>
-                        <div className="kv">Live since 2019-01-01</div>
+                        <div>
+                            <div style={{ fontWeight: 700, marginBottom: 8 }} className="trailing-table-heading">Equity Curve</div>
+                            <span className='kv'>
+                                Live since 2019-01-01
+                            </span>
+                        </div>
                         <div className="controls">
-                            <label className="kv">From
+                            <label className="kv">
+                                <span style={{ display: 'block' }}>
+                                    From date
+                                </span>
                                 <input className="small" type="date" value={fromDate} onChange={e => setFromDate(e.target.value)} />
                             </label>
-                            <label className="kv">To
+                            <label className="kv">
+                                <span style={{ display: "block" }}>
+                                    To date
+                                </span>
                                 <input className="small" type="date" value={toDate} onChange={e => setToDate(e.target.value)} />
                             </label>
                         </div>
@@ -42,11 +54,11 @@ export default function Portfolio() {
                 </div>
             </div>
 
-            <div style={{ marginTop: 18 }} className="card">
+            {/* <div style={{ marginTop: 18 }} className="card">
                 <h3 style={{ marginTop: 0 }}>Monthly returns (by year)</h3>
                 {loading && <p className="kv">Loading...</p>}
                 <MonthlyReturnsTable data={monthlyReturnsByYear} />
-            </div>
+            </div> */}
         </div>
     );
 }
