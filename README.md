@@ -19,5 +19,4 @@ Export charts as PNG
 
 Local blog system powered by JSON
 
-## Live Demo:
-https://qode-portfolio.netlify.app/
+## Live Demo: https://qode-portfolio.netlify.app/
